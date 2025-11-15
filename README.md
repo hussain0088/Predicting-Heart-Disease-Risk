@@ -1,1 +1,52 @@
-Heart Disease Risk PredictionThis project implements a machine learning pipeline using a Random Forest Classifier to achieve approximately 98% accuracy in predicting a patient's risk of heart disease.1. Setup & Data LoadingAction: Essential libraries (pandas, sklearn.ensemble, sklearn.preprocessing, etc.) are imported. The heart.csv dataset (1025 records) is loaded into a DataFrame.Small Explanation: This step sets up the computational environment and ingests the raw data for processing.2. Data PreprocessingAction: Features ($\text{X}$) are separated from the target ($\text{y}$). Data exploration confirms no null values. Numerical features are standardized using StandardScaler.Small Explanation: Preprocessing cleans the data and normalizes the range of numerical features, which is essential for stable model training.3. Data SplittingAction: The processed data is split into training and testing subsets.Small Explanation: Splitting the data ensures the model's performance can be impartially evaluated on data it has never seen, validating its ability to generalize.4. Model Training & EvaluationAction: A Random Forest Classifier is initialized and trained on the scaled training data. The model then makes predictions on the test set.Small Explanation: The robust Random Forest ensemble method is chosen for its high predictive power in classification tasks.5. ResultsAction: Performance is assessed using a classification report, confusion matrix, and accuracy score.Small Explanation: The model achieved an outstanding final accuracy of 98.05%, demonstrating excellent predictive capability for heart disease risk.
+1. Setup & Data Loading
+
+Action:
+
+Imported essential libraries such as pandas, sklearn.ensemble, sklearn.preprocessing, and others.
+
+Loaded the heart.csv dataset (1025 records) into a Pandas DataFrame.
+
+Explanation:
+This step initializes the computational environment and ingests the raw dataset for subsequent processing.
+
+2. Data Preprocessing
+
+Action:
+
+Separated features (X) from the target variable (y).
+
+Conducted data exploration and confirmed that there are no missing values.
+
+Standardized numerical features using StandardScaler.
+
+Explanation:
+Preprocessing ensures data cleanliness and normalizes numerical features, which is crucial for stable and effective model training.
+
+3. Data Splitting
+
+Action:
+
+Split the processed data into training and testing sets.
+
+Explanation:
+This allows the model to be evaluated on unseen data, providing a realistic measure of its ability to generalize.
+
+4. Model Training & Evaluation
+
+Action:
+
+Initialized and trained a Random Forest Classifier on the training data.
+
+Made predictions on the test set.
+
+Explanation:
+The Random Forest algorithm was chosen for its robustness and high predictive power in classification tasks.
+
+5. Results
+
+Action:
+
+Assessed model performance using a classification report, confusion matrix, and accuracy score.
+
+Explanation:
+The model achieved a final accuracy of 98.05%, demonstrating exceptional predictive capability for identifying heart disease risk.
